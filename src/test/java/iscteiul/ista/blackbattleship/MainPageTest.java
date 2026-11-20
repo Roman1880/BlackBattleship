@@ -4,6 +4,8 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,14 +27,14 @@ public class MainPageTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.jetbrains.com/");
-        
+
         mainPage = new MainPage(driver);
         mainPage.closePopUp();
     }
 
     @AfterEach
     public void tearDown() {
-      driver.quit();
+        driver.quit();
     }
 
 
@@ -55,7 +57,9 @@ public class MainPageTest {
     public void toolsMenu() {
         mainPage.toolsMenu.click();
 
-        WebElement menuPopup = driver.findElement(By.cssSelector("div[data-test='main-submenu']"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement menuPopup = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[data-test='main-submenu']")));
         assertTrue(menuPopup.isDisplayed());
     }
 
