@@ -203,3 +203,11 @@ Convenções de código:
 * Allure Report: <https://allurereport.org/docs/>
 * Selenium IDE: <https://www.selenium.dev/selenium-ide/>
 * Jogo sob teste: <https://papergames.io/en/battleship>
+
+* ---
+
+## Notas sobre a Execução dos Testes Automatizados (Selenium WebDriver)
+
+Os cenários de teste (**US1**, **US2**, **US3** e **US4**) foram gravados e validados com sucesso no **Selenium IDE** (`TestSuite_124359.side`), utilizando uma sessão de navegador previamente iniciada como convidado (*Guest*).
+
+No entanto, durante a execução automatizada via **JUnit / Maven** (`FirefoxDriver`), o Selenium WebDriver inicia uma **instância limpa e isolada do navegador** (sem *cookies* nem armazenamento local de sessões anteriores). Por esse motivo, a plataforma *Papergames.io* solicita o registo ou a criação de um nome de utilizador convidado (*Guest Login*) antes de permitir o acesso às funcionalidades principais, o que impede o prosseguimento automático de alguns passos que dependem de uma sessão já autenticada.
