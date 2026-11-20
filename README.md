@@ -12,12 +12,12 @@ por um par de classes que segue o padrão **Page Object Model**.
 
 ## Elementos do grupo
 
-| Nº      | Nome completo    |  Test suite (Parte 2)    |
-| ------- | ---------------  |  ------------------------|
-| «124359»|«Roman Havrylenko»| «UserStoryTest1»         |
-| «122669»| «Luo Hang»       | «UserStoryTest2»         |
-| «nº»    | «Nome»           | «UserStoryTest3»         |
-| «nº»    | «Nome»           | «UserStoryTest4»         |
+| Nº       | Nome completo      |  Test suite (Parte 2)    |
+|----------|--------------------|  ------------------------|
+| «124359» | «Roman Havrylenko» | «UserStoryTest1»         |
+| «122669» | «Luo Hang»         | «UserStoryTest2»         |
+| «124109» | «Salvador Gomes»   | «UserStoryTest3»         |
+| «nº»     | «Nome»             | «UserStoryTest4»         |
 
 > **Preencher antes do primeiro commit** — a tabela é parte da evidência do critério
 > «Setup do projeto e Product Backlog» (25%).
