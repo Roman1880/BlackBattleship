@@ -1,0 +1,241 @@
+{
+  "id": "25610a1f-ab9f-45b9-abd1-616709046124",
+  "version": "2.0",
+  "name": "TestSuite_124359",
+  "url": "https://papergames.io/en/battleship",
+  "tests": [{
+    "id": "c864084d-b6d3-4898-be2a-60fd7122bf8f",
+    "name": "UserStoryTest1",
+    "commands": [{
+      "id": "65736541-6a7a-4518-9588-8dc0aed63c6e",
+      "comment": "Abri a página do jogo Batalha Naval",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fd9e978-89ad-4cf4-a364-32e9509515f9",
+      "comment": "Defini o tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "579x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc1180eb-aa55-4b4b-a9e2-f4d05c1d6ce5",
+      "comment": "Cliquei no botão para jogar contra o robô",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe62fd85-ee7e-46e3-b8c4-d569eca2e3c3",
+      "comment": "Iniciei a preparação do tabuleiro",
+      "command": "click",
+      "target": "css=.d0dC4yb9mK0Wlo2N7owc > div",
+      "targets": [
+        ["css=.d0dC4yb9mK0Wlo2N7owc > div", "css:finder"],
+        ["xpath=//div[@id='slot-video']/span/span/div", "xpath:idRelative"],
+        ["xpath=//div/span/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf00012b-45db-4cdf-980c-e63885c888b6",
+      "comment": "Posicionei o primeiro navio na grelha",
+      "command": "click",
+      "target": "css=.cell-1-3 .circle",
+      "targets": [
+        ["css=.cell-1-3 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d7aa414-0cf1-4b49-a97c-52161405e0e4",
+      "comment": "Confirmei a posição do navio",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "edbd17c7-ea2f-49d2-a2f9-b863886a7d8f",
+      "comment": "Selecionei o segundo navio para posicionar",
+      "command": "click",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=//img[@alt='default']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[4]/img", "xpath:idRelative"],
+        ["xpath=//button[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0561872-0faa-4aa2-b463-c4bafdff3a97",
+      "comment": "Coloquei o segundo navio no tabuleiro",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc3b9b93-f7fe-40fa-ac5f-0f70cbf381bb",
+      "comment": "Selecionei o terceiro navio da frota",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(3) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(3) > img", "css:finder"],
+        ["xpath=//img[@alt='missile']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[3]/img", "xpath:idRelative"],
+        ["xpath=//button[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b238a2f9-f277-4c16-9738-0cedd49ace6e",
+    "name": "UserStoryTest2",
+    "commands": [{
+      "id": "301de134-ac18-44fb-b9c6-aacc3b2c83ab",
+      "comment": "Abri a página do jogo Batalha Naval",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65bb0b5f-7f3c-4e4b-8717-cfabd1ab3ad4",
+      "comment": "Defini o tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "834x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "275cb319-b158-4891-9a8a-5489c20c8a1c",
+      "comment": "Cliquei no botão para procurar um adversário online",
+      "command": "click",
+      "target": "css=.d-flex > .fw-normal:nth-child(1)",
+      "targets": [
+        ["css=.d-flex > .fw-normal:nth-child(1)", "css:finder"],
+        ["xpath=//span[2]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "de2fb173-ede5-499d-8ebc-925d320638ae",
+    "name": "UserStoryTest3",
+    "commands": [{
+      "id": "d3099390-93cf-4c81-b5d3-b6e94e36f189",
+      "comment": "Abri a página do jogo Batalha Naval",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef432f9d-32c5-42f9-8b5f-a345950fe412",
+      "comment": "Defini o tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "834x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8baebc43-55a7-4b34-bd5b-7858c6f7d5fb",
+      "comment": "Cliquei no botão para criar uma partida com um amigo",
+      "command": "click",
+      "target": "css=.w-100:nth-child(1) > .btn-lg .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ced335d-95d4-4d1e-a2e8-132e377dbd53",
+      "comment": "Copiei o link de convite para a área de transferência",
+      "command": "click",
+      "target": "css=.fa-copy > path",
+      "targets": [
+        ["css=.fa-copy > path", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9fbb76f8-de52-49f8-82c2-815ca913865f",
+    "name": "UserStoryTest4",
+    "commands": [{
+      "id": "419fbd33-bbeb-4286-9bac-06c332fb0a1f",
+      "comment": "Abri a página do jogo Batalha Naval",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f4ccf67-264c-443c-9596-78b5d782161c",
+      "comment": "Defini o tamanho da janela do navegador para 1280x800",
+      "command": "setWindowSize",
+      "target": "1280x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13b7475c-4672-48b7-8309-09872b3f6180",
+      "comment": "Cliquei no nome de utilizador no menu superior",
+      "command": "click",
+      "target": "css=.ms-2 > .text-truncate",
+      "targets": [
+        ["css=.ms-2 > .text-truncate", "css:finder"],
+        ["xpath=//span/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b314e17-91cc-4790-b79f-be7a9cff5748",
+      "comment": "Selecionei a opção para alterar o nickname",
+      "command": "click",
+      "target": "css=.mat-mdc-menu-item:nth-child(3) > .mat-mdc-menu-item-text > span",
+      "targets": [
+        ["css=.cdk-focused > .mat-mdc-menu-item-text > span", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-serverApp0']/div/a/span/span", "xpath:idRelative"],
+        ["xpath=//a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "916be15d-a42a-4892-b259-bca09f23b135",
+      "comment": "Selecionei o campo de texto do nickname",
+      "command": "click",
+      "target": "id=mat-input-serverApp0",
+      "targets": [
+        ["id=mat-input-serverApp0", "id"],
+        ["css=#mat-input-serverApp0", "css:finder"],
+        ["xpath=//input[@id='mat-input-serverApp0']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f996696-4c36-4ee7-9dd6-06a900be97c3",
+      "comment": "Introduzi o novo nickname bo11",
+      "command": "executeScript",
+      "target": "var el = document.getElementById('mat-input-serverApp0'); el.value = 'bo11'; el.dispatchEvent(new Event('input', { bubbles: true }));",
+      "targets": [],
+      "value": "bo11"
+    }, {
+      "id": "389f63b8-f543-4aa3-a3d8-f8be84313275",
+      "comment": "Confirmei a alteração do nickname",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1ed31f47-7179-4333-875c-6e5650bfe7b7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://papergames.io/en/battleship"],
+  "plugins": []
+}
