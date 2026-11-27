@@ -206,8 +206,13 @@ Convenções de código:
 
 * ---
 
-## Notas sobre a Execução dos Testes Automatizados (Selenium WebDriver)
+## Notas sobre a Execução dos Testes Automatizados (Selenium WebDriver e Selenide)
 
-Os cenários de teste (**US1**, **US2**, **US3** e **US4**) foram gravados e validados com sucesso no **Selenium IDE** (`TestSuite_124359.side`), utilizando uma sessão de navegador previamente iniciada como convidado (*Guest*).
+Os cenários de teste (**US1**, **US2**, **US3** e **US4**) foram gravados e validados com sucesso no Selenium IDE (`TestSuite_124359.side`), utilizando uma sessão de navegador previamente iniciada como convidado (*Guest*).
 
-No entanto, durante a execução automatizada via **JUnit / Maven** (`FirefoxDriver`), o Selenium WebDriver inicia uma **instância limpa e isolada do navegador** (sem *cookies* nem armazenamento local de sessões anteriores). Por esse motivo, a plataforma *Papergames.io* solicita o registo ou a criação de um nome de utilizador convidado (*Guest Login*) antes de permitir o acesso às funcionalidades principais, o que impede o prosseguimento automático de alguns passos que dependem de uma sessão já autenticada.
+No entanto, durante a execução automatizada via JUnit / Maven (`FirefoxDriver` tanto em Selenium WebDriver como em Selenide), o navegador inicia numa instância limpa e isolada (sem *cookies* nem armazenamento local de sessões anteriores). Por esse motivo, a plataforma **Papergames.io** apresenta a janela de registo ou criação de nome de utilizador convidado (*Guest Login*) antes de permitir o acesso às salas de jogo, o que explica os resultados obtidos na suíte Selenide (**2 testes aprovados e 2 falhados**):
+
+* **Testes aprovados (`UserStory2SelenideTest` e `UserStory4SelenideTest`):** as ações iniciais de seleção de modo online (`testPlayOnlineRandomOpponent`) e interação com o menu superior (`testChangeNickname`) conseguem prosseguir até ao ponto verificado pelo teste.
+* **Testes falhados (`UserStory1SelenideTest` e `UserStory3SelenideTest`):**
+  * Em `UserStory1SelenideTest` (`testPlayAgainstRobot`), ocorre `Element not found {.cell-1-3 .circle}` (*Timeout: 4 s*), pois o tabuleiro de posicionamento da frota não é carregado sem a autenticação prévia de convidado.
+  * Em `UserStory3SelenideTest` (`testInviteFriendWithLink`), ocorre `Element not found {.fa-copy}` (*Timeout: 4 s*), uma vez que o ecrã de partilha de convite (ícone de copiar link) não é apresentado antes de introduzir um *nickname*.
