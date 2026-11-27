@@ -108,6 +108,7 @@ páginas reais do jogo. Cada US indica ator, ação, valor e critérios de aceit
 | US15 | Como jogador competitivo, quero aceder ao sistema de classificação (`https://papergames.io/en/blog/ranka`), para verificar a minha posição face a outros jogadores. | A página explica o funcionamento do sistema de ranking e exibe as informações de classificação. | 124109      | ⬜ |
 | US16 | Como visitante, quero abrir a lista de jogos da plataforma (`https://papergames.io/en`) e escolher a Batalha Naval, para chegar ao jogo sem saber o endereço direto. | A página inicial mostra a lista de jogos e, ao clicar em Battleship, o navegador abre `https://papergames.io/en/battleship`. |124109| ⬜ |
 | US17 | Como jogador, quero consultar o registo de alterações da plataforma (`https://papergames.io/en/changelog`), para saber que novidades e correções foram feitas aos jogos. | A página do changelog abre corretamente e apresenta a lista de atualizações com as respetivas datas. |124109| ⬜ |
+
 Regras práticas ao escrever as US:
 
 * uma US por funcionalidade observável na UI (criar partida, escolher tamanho do tabuleiro, colocar navios,
