@@ -1,0 +1,187 @@
+{
+  "id": "772d5ea6-1f67-4c39-baf3-a632c2c1e010",
+  "version": "2.0",
+  "name": "TestSuite_124109",
+  "url": "https://papergames.io",
+  "tests": [{
+    "id": "fc32c117-bdb5-45c1-bac7-5f384c728eaa",
+    "name": "UserStoryTest13",
+    "commands": [{
+      "id": "bd493c30-4f2d-4486-9e0c-b0a1a668fc06",
+      "comment": "Abri a página inicial do Papergames",
+      "command": "open",
+      "target": "/pt-br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44fb753d-b413-429e-b472-de18a2e03259",
+      "comment": "Defini o tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "996x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86df7f78-63f3-49eb-bc29-e9194b7563ff",
+      "comment": "Cliquei em Loja no menu lateral para abrir a loja",
+      "command": "click",
+      "target": "linkText=Loja",
+      "targets": [
+        ["linkText=Loja", "linkText"],
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//a[contains(@href, '/pt-br/shop')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Loja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cbd633e-1026-4a22-a288-607b58540787",
+      "comment": "Abri a secção Emojis da loja",
+      "command": "click",
+      "target": "css=.box-shadow-1:nth-child(3) h3",
+      "targets": [
+        ["css=.box-shadow-1:nth-child(3) h3", "css:finder"],
+        ["xpath=//div[3]/a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Emojis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "87edf6bc-08e2-436e-bc6e-151c53f14b0c",
+    "name": "UserStoryTest15",
+    "commands": [{
+      "id": "2eea82e6-b305-4a1d-9750-d030b156cd24",
+      "comment": "Abri a página inicial do Papergames",
+      "command": "open",
+      "target": "/pt-br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bff5d18c-bc2f-40c7-b8bf-c17822b89ca5",
+      "comment": "Defini o tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "996x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb4a74d1-8d86-4ef9-9f03-fddc03e0f02f",
+      "comment": "Cliquei em RANKA no menu lateral para abrir o sistema de classificação",
+      "command": "click",
+      "target": "linkText=RANKA",
+      "targets": [
+        ["linkText=RANKA", "linkText"],
+        ["css=.hide-if-collapsed > .nav-item:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'RANKA')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/pt-br/blog/ranka')]", "xpath:href"],
+        ["xpath=//ul[5]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'RANKA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "898ecf6a-6aed-431d-b407-3c907f9efdfa",
+      "comment": "Confirmei o título da página de classificação RANKA",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'RANKA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e466159a-954e-49fe-9b62-57cc90170c10",
+    "name": "UserStoryTest16",
+    "commands": [{
+      "id": "ab6cfa47-c4d7-42e3-add6-8eef0309366b",
+      "comment": "Abri a página inicial do Papergames",
+      "command": "open",
+      "target": "/pt-br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd65fbce-1b8c-4f47-8a67-40b4aae37202",
+      "comment": "Defini o tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "1076x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38e59910-5310-410a-8ff6-05182d088ee5",
+      "comment": "Cliquei no cartão da Batalha Naval na lista de jogos",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Batalha Naval']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b454130-5042-4203-9a89-076d792778d7",
+      "comment": "Confirmei que a página do jogo Batalha Naval abriu",
+      "command": "click",
+      "target": "css=.h3",
+      "targets": [
+        ["css=.h3", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Batalha Naval On-line')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "96cad592-4da9-49e7-8e42-f7e442ee46a5",
+    "name": "UserStoryTest17",
+    "commands": [{
+      "id": "543c17b4-92c0-4ef7-bdf2-49ad5d50e676",
+      "comment": "Abri a página inicial do Papergames",
+      "command": "open",
+      "target": "/pt-br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e15f9ebd-0674-408a-8ada-24e03011c2d8",
+      "comment": "Defini o tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "1076x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f8cf963-0ab9-44db-ad08-fe8e2bf6837e",
+      "comment": "Cliquei em Changelog no menu lateral para abrir o registo de alterações",
+      "command": "click",
+      "target": "linkText=Changelog",
+      "targets": [
+        ["linkText=Changelog", "linkText"],
+        ["css=.nav:nth-child(5) > .nav-item:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Changelog')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/pt-br/changelog')]", "xpath:href"],
+        ["xpath=//ul[5]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Changelog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87d4fdc8-f92c-4bb4-a8f3-d1db21702e2b",
+      "comment": "Confirmei que a lista de atualizações do changelog foi apresentada",
+      "command": "click",
+      "target": "id=changelog",
+      "targets": [
+        ["id=changelog", "id"],
+        ["css=#changelog", "css:finder"],
+        ["xpath=//h1[@id='changelog']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Changelog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e5e5a7ce-59bd-452c-8042-7afbdd639821",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fc32c117-bdb5-45c1-bac7-5f384c728eaa"]
+  }],
+  "urls": ["https://papergames.io/"],
+  "plugins": []
+}
