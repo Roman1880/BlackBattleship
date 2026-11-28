@@ -1,0 +1,73 @@
+package iscteiul.ista.blackbattleship.selenide124109;
+
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Description;
+import io.qameta.allure.selenide.AllureSelenide;
+import iscteiul.ista.blackbattleship.selenide124109.pages.UserStory13Page;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.closeWebDriver;
+import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.page;
+import static com.codeborne.selenide.Selenide.sleep;
+import static com.codeborne.selenide.Selenide.webdriver;
+import static com.codeborne.selenide.WebDriverConditions.urlContaining;
+
+/**
+ * Testes de aceitação com Selenide para a User Story 13: Explorar a loja.
+ */
+public class UserStory13SelenideTest {
+
+    private UserStory13Page userStory13Page;
+
+    /**
+     * Configura o navegador e liga o Selenide ao relatório Allure.
+     */
+    @BeforeAll
+    public static void setUpAll() {
+        Configuration.browser = "firefox";
+        Configuration.browserSize = "996x692";
+        Configuration.timeout = 15000;
+        Configuration.pageLoadStrategy = "eager";
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+    }
+
+    /**
+     * Abre a página inicial do Papergames.
+     */
+    @BeforeEach
+    public void setUp() {
+        open("https://papergames.io/pt-br/");
+        userStory13Page = page(UserStory13Page.class);
+    }
+
+    /**
+     * Fecha o navegador após cada teste.
+     */
+    @AfterEach
+    public void tearDown() {
+        closeWebDriver();
+    }
+
+    /**
+     * Verifica que a loja abre e que a secção de emojis é apresentada.
+     */
+    @Test
+    @Description("US13 - Abrir a loja pelo menu lateral e entrar na secção Emojis.")
+    public void testOpenShopEmojis() {
+        userStory13Page.shopLink.shouldBe(visible).click();
+        webdriver().shouldHave(urlContaining("shop"));
+        userStory13Page.acceptCookiesIfPresent();
+        sleep(1500);
+
+        userStory13Page.emojisSection.shouldBe(visible).click();
+        sleep(1500);
+
+        webdriver().shouldHave(urlContaining("shop"));
+    }
+}
